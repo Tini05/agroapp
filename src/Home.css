@@ -1,0 +1,218 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, rgba(34, 193, 195, 0.7), rgba(253, 187, 45, 0.7)), url('https://wallpapers.com/images/featured/agriculture-pictures-ppsj59vfqlop02h9.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Slight dark overlay for text visibility */
+  }
+  
+  .hero-section .hero-content {
+    position: relative;
+    z-index: 1;
+    padding-top: 30%;
+    text-align: center;
+  }
+  
+  .hero-section h1 {
+    font-family: 'Georgia', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .hero-section .lead {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-section .btn-light {
+    background: #f4a300; /* Earthy yellow */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .hero-section .btn-light:hover {
+    background-color: #ffcc00; /* Lighter yellow */
+    transform: scale(1.05);
+  }
+
+  .carousel-indicators [data-bs-target] {
+    background-color: black;
+  }
+  
+  /* Latest Articles Carousel */
+  .carousel-item {
+    background-color: rgba(255, 255, 255, 0.85); /* Light background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .carousel-item img {
+    border-radius: 8px;
+    object-fit: cover;
+    height: 250px;
+  }
+  
+  .article-slide h4 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    color: #2a4d26; /* Dark green */
+    font-weight: bold;
+  }
+  
+  .article-slide p {
+    color: #555;
+  }
+  
+  .article-slide .btn-warning {
+    background-color: #f4a300; /* Earthy yellow */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .article-slide .btn-warning:hover {
+    background-color: #ffcc00; /* Lighter yellow */
+    transform: scale(1.1);
+  }
+  
+  /* Featured Categories */
+  .category-card {
+    background-color: #f8f4e6; /* Warm beige background */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-card h5 {
+    color: #3e6b3d; /* Earthy dark green */
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+  }
+  
+  .category-card .btn-warning {
+    background-color: #f4a300;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .category-card .btn-warning:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+  }
+  
+  /* Call to Action */
+  .cta-section {
+    background-color: #60703b; /* Deep green */
+    color: white;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .cta-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .cta-section p {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .cta-section .btn-light {
+    background-color: #f4a300;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .cta-section .btn-light:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #3e6b3d;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  footer a {
+    color: #f4a300;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .text-muted {
+    color: #ddd;
+  }
+  
+  /* General Styling */
+  body {
+    background-color: #f5f5f5; /* Light grey background */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  h2 {
+    font-family: 'Georgia', serif;
+    color: #2a4d26; /* Dark green */
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Button Transitions */
+  .btn-light, .btn-warning {
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+  }
+  
+  .btn-light:hover, .btn-warning:hover {
+    background-color: #ffcc00; /* Lighter yellow */
+    transform: scale(1.05);
+  }
+  
+  /* Animations for Hero */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-section {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
